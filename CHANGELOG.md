@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Modernized development and release tooling around pnpm, tsdown, Node.js 24/26 CI coverage, and meaningful TypeScript ESLint rules.
+
 ## [0.1.0] - 2026-10-29
 
 - Experimental initial release of the agnostic synchronous RBAC/ABAC engine and schema-free adapters.

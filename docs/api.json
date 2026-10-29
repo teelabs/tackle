@@ -1,4 +1,5 @@
 {
+	"schemaVersion": "2.0",
 	"id": 0,
 	"name": "@teelabs/tackle",
 	"variant": "project",
@@ -36,7 +37,7 @@
 					},
 					"children": [
 						{
-							"id": 164,
+							"id": 165,
 							"name": "db",
 							"variant": "declaration",
 							"kind": 1024,
@@ -45,12 +46,13 @@
 								{
 									"fileName": "src/drizzle.ts",
 									"line": 4,
-									"character": 56
+									"character": 56,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L4"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 171,
+								"target": 164,
 								"name": "DB",
 								"package": "@teelabs/tackle",
 								"qualifiedName": "DrizzleAssignmentResolverOptions.DB",
@@ -58,7 +60,7 @@
 							}
 						},
 						{
-							"id": 165,
+							"id": 166,
 							"name": "loadAssignments",
 							"variant": "declaration",
 							"kind": 1024,
@@ -67,48 +69,35 @@
 								{
 									"fileName": "src/drizzle.ts",
 									"line": 4,
-									"character": 64
+									"character": 64,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L4"
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 166,
+									"id": 167,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
-									"sources": [
-										{
-											"fileName": "src/drizzle.ts",
-											"line": 4,
-											"character": 81
-										}
-									],
 									"signatures": [
 										{
-											"id": 167,
+											"id": 168,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/drizzle.ts",
-													"line": 4,
-													"character": 81
-												}
-											],
 											"parameters": [
 												{
-													"id": 168,
+													"id": 169,
 													"name": "db",
 													"variant": "param",
 													"kind": 32768,
 													"flags": {},
 													"type": {
 														"type": "reference",
-														"target": 171,
+														"target": 164,
 														"name": "DB",
 														"package": "@teelabs/tackle",
 														"qualifiedName": "DrizzleAssignmentResolverOptions.DB",
@@ -116,7 +105,7 @@
 													}
 												},
 												{
-													"id": 169,
+													"id": 170,
 													"name": "subjectId",
 													"variant": "param",
 													"kind": 32768,
@@ -127,7 +116,7 @@
 													}
 												},
 												{
-													"id": 170,
+													"id": 171,
 													"name": "context",
 													"variant": "param",
 													"kind": 32768,
@@ -157,7 +146,8 @@
 													{
 														"type": "reference",
 														"target": {
-															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"packageName": "typescript",
+															"packagePath": "lib/lib.es5.d.ts",
 															"qualifiedName": "Promise"
 														},
 														"typeArguments": [
@@ -186,8 +176,8 @@
 						{
 							"title": "Properties",
 							"children": [
-								164,
-								165
+								165,
+								166
 							]
 						}
 					],
@@ -195,12 +185,13 @@
 						{
 							"fileName": "src/drizzle.ts",
 							"line": 4,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L4"
 						}
 					],
 					"typeParameters": [
 						{
-							"id": 171,
+							"id": 164,
 							"name": "DB",
 							"variant": "typeParam",
 							"kind": 131072,
@@ -218,7 +209,8 @@
 						{
 							"fileName": "src/drizzle.ts",
 							"line": 9,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L9"
 						}
 					],
 					"signatures": [
@@ -240,7 +232,8 @@
 								{
 									"fileName": "src/drizzle.ts",
 									"line": 9,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L9"
 								}
 							],
 							"typeParameters": [
@@ -295,7 +288,8 @@
 												{
 													"fileName": "src/drizzle.ts",
 													"line": 10,
-													"character": 11
+													"character": 11,
+													"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L10"
 												}
 											],
 											"signatures": [
@@ -309,7 +303,8 @@
 														{
 															"fileName": "src/drizzle.ts",
 															"line": 10,
-															"character": 11
+															"character": 11,
+															"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L10"
 														}
 													],
 													"parameters": [
@@ -355,7 +350,8 @@
 															{
 																"type": "reference",
 																"target": {
-																	"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																	"packageName": "typescript",
+																	"packagePath": "lib/lib.es5.d.ts",
 																	"qualifiedName": "Promise"
 																},
 																"typeArguments": [
@@ -385,13 +381,6 @@
 												159
 											]
 										}
-									],
-									"sources": [
-										{
-											"fileName": "src/drizzle.ts",
-											"line": 10,
-											"character": 9
-										}
 									]
 								}
 							}
@@ -417,7 +406,8 @@
 				{
 					"fileName": "src/drizzle.ts",
 					"line": 1,
-					"character": 0
+					"character": 0,
+					"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/drizzle.ts#L1"
 				}
 			]
 		},
@@ -453,7 +443,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 10,
-									"character": 37
+									"character": 37,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L10"
 								}
 							],
 							"type": {
@@ -475,7 +466,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 10,
-									"character": 171
+									"character": 171,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L10"
 								}
 							],
 							"type": {
@@ -486,13 +478,6 @@
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
-									"sources": [
-										{
-											"fileName": "src/express.ts",
-											"line": 10,
-											"character": 188
-										}
-									],
 									"signatures": [
 										{
 											"id": 130,
@@ -500,13 +485,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/express.ts",
-													"line": 10,
-													"character": 188
-												}
-											],
 											"parameters": [
 												{
 													"id": 131,
@@ -526,10 +504,6 @@
 												"type": "union",
 												"types": [
 													{
-														"type": "intrinsic",
-														"name": "undefined"
-													},
-													{
 														"type": "reference",
 														"target": 20,
 														"name": "AuthorizationContext",
@@ -538,7 +512,8 @@
 													{
 														"type": "reference",
 														"target": {
-															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"packageName": "typescript",
+															"packagePath": "lib/lib.es5.d.ts",
 															"qualifiedName": "Promise"
 														},
 														"typeArguments": [
@@ -546,20 +521,24 @@
 																"type": "union",
 																"types": [
 																	{
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	{
 																		"type": "reference",
 																		"target": 20,
 																		"name": "AuthorizationContext",
 																		"package": "@teelabs/tackle"
+																	},
+																	{
+																		"type": "intrinsic",
+																		"name": "undefined"
 																	}
 																]
 															}
 														],
 														"name": "Promise",
 														"package": "typescript"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
 													}
 												]
 											}
@@ -580,7 +559,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 10,
-									"character": 66
+									"character": 66,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L10"
 								}
 							],
 							"type": {
@@ -591,13 +571,6 @@
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
-									"sources": [
-										{
-											"fileName": "src/express.ts",
-											"line": 10,
-											"character": 84
-										}
-									],
 									"signatures": [
 										{
 											"id": 126,
@@ -605,13 +578,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/express.ts",
-													"line": 10,
-													"character": 84
-												}
-											],
 											"parameters": [
 												{
 													"id": 127,
@@ -631,10 +597,6 @@
 												"type": "union",
 												"types": [
 													{
-														"type": "intrinsic",
-														"name": "undefined"
-													},
-													{
 														"type": "reference",
 														"target": 16,
 														"name": "Resource",
@@ -643,7 +605,8 @@
 													{
 														"type": "reference",
 														"target": {
-															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"packageName": "typescript",
+															"packagePath": "lib/lib.es5.d.ts",
 															"qualifiedName": "Promise"
 														},
 														"typeArguments": [
@@ -651,20 +614,24 @@
 																"type": "union",
 																"types": [
 																	{
-																		"type": "intrinsic",
-																		"name": "undefined"
-																	},
-																	{
 																		"type": "reference",
 																		"target": 16,
 																		"name": "Resource",
 																		"package": "@teelabs/tackle"
+																	},
+																	{
+																		"type": "intrinsic",
+																		"name": "undefined"
 																	}
 																]
 															}
 														],
 														"name": "Promise",
 														"package": "typescript"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
 													}
 												]
 											}
@@ -688,7 +655,8 @@
 						{
 							"fileName": "src/express.ts",
 							"line": 10,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L10"
 						}
 					]
 				},
@@ -719,13 +687,15 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 4,
-									"character": 57
+									"character": 57,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L4"
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
 									"qualifiedName": "Record"
 								},
 								"typeArguments": [
@@ -738,11 +708,11 @@
 										"types": [
 											{
 												"type": "intrinsic",
-												"name": "undefined"
+												"name": "string"
 											},
 											{
 												"type": "intrinsic",
-												"name": "string"
+												"name": "undefined"
 											}
 										]
 									}
@@ -763,7 +733,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 4,
-									"character": 38
+									"character": 38,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L4"
 								}
 							],
 							"type": {
@@ -785,7 +756,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 4,
-									"character": 102
+									"character": 102,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L4"
 								}
 							],
 							"type": {
@@ -809,7 +781,8 @@
 												{
 													"fileName": "src/express.ts",
 													"line": 4,
-													"character": 113
+													"character": 113,
+													"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L4"
 												}
 											],
 											"type": {
@@ -826,13 +799,6 @@
 											"children": [
 												110
 											]
-										}
-									],
-									"sources": [
-										{
-											"fileName": "src/express.ts",
-											"line": 4,
-											"character": 111
 										}
 									]
 								}
@@ -853,7 +819,8 @@
 						{
 							"fileName": "src/express.ts",
 							"line": 4,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L4"
 						}
 					]
 				},
@@ -882,7 +849,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 6,
-									"character": 82
+									"character": 82,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L6"
 								}
 							],
 							"signatures": [
@@ -896,7 +864,8 @@
 										{
 											"fileName": "src/express.ts",
 											"line": 6,
-											"character": 82
+											"character": 82,
+											"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L6"
 										}
 									],
 									"parameters": [
@@ -929,7 +898,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 6,
-									"character": 39
+									"character": 39,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L6"
 								}
 							],
 							"signatures": [
@@ -943,7 +913,8 @@
 										{
 											"fileName": "src/express.ts",
 											"line": 6,
-											"character": 39
+											"character": 39,
+											"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L6"
 										}
 									],
 									"parameters": [
@@ -982,7 +953,8 @@
 						{
 							"fileName": "src/express.ts",
 							"line": 6,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L6"
 						}
 					]
 				},
@@ -1004,7 +976,8 @@
 						{
 							"fileName": "src/express.ts",
 							"line": 8,
-							"character": 12
+							"character": 12,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L8"
 						}
 					],
 					"type": {
@@ -1015,13 +988,6 @@
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
-							"sources": [
-								{
-									"fileName": "src/express.ts",
-									"line": 8,
-									"character": 26
-								}
-							],
 							"signatures": [
 								{
 									"id": 120,
@@ -1063,7 +1029,8 @@
 						{
 							"fileName": "src/express.ts",
 							"line": 16,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L16"
 						}
 					],
 					"signatures": [
@@ -1085,7 +1052,8 @@
 								{
 									"fileName": "src/express.ts",
 									"line": 16,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L16"
 								}
 							],
 							"parameters": [
@@ -1122,13 +1090,6 @@
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
-									"sources": [
-										{
-											"fileName": "src/express.ts",
-											"line": 17,
-											"character": 9
-										}
-									],
 									"signatures": [
 										{
 											"id": 101,
@@ -1136,13 +1097,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/express.ts",
-													"line": 17,
-													"character": 9
-												}
-											],
 											"parameters": [
 												{
 													"id": 102,
@@ -1187,7 +1141,8 @@
 											"type": {
 												"type": "reference",
 												"target": {
-													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"packageName": "typescript",
+													"packagePath": "lib/lib.es5.d.ts",
 													"qualifiedName": "Promise"
 												},
 												"typeArguments": [
@@ -1233,7 +1188,8 @@
 				{
 					"fileName": "src/express.ts",
 					"line": 1,
-					"character": 0
+					"character": 0,
+					"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/express.ts#L1"
 				}
 			]
 		},
@@ -1269,7 +1225,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 32,
-									"character": 78
+									"character": 78,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L32"
 								}
 							],
 							"signatures": [
@@ -1283,7 +1240,8 @@
 										{
 											"fileName": "src/index.ts",
 											"line": 32,
-											"character": 78
+											"character": 78,
+											"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L32"
 										}
 									],
 									"parameters": [
@@ -1311,14 +1269,16 @@
 									"overwrites": {
 										"type": "reference",
 										"target": -1,
-										"name": "Error.constructor"
+										"name": "Error.constructor",
+										"package": "typescript"
 									}
 								}
 							],
 							"overwrites": {
 								"type": "reference",
 								"target": -1,
-								"name": "Error.constructor"
+								"name": "Error.constructor",
+								"package": "typescript"
 							}
 						},
 						{
@@ -1333,7 +1293,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/typescript/lib/lib.es2022.error.d.ts",
+									"fileName": "node_modules/.pnpm/typescript@5.9.3/node_modules/typescript/lib/lib.es2022.error.d.ts",
 									"line": 26,
 									"character": 4
 								}
@@ -1360,7 +1320,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 32,
-									"character": 60
+									"character": 60,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L32"
 								}
 							],
 							"type": {
@@ -1382,7 +1343,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"fileName": "node_modules/.pnpm/typescript@5.9.3/node_modules/typescript/lib/lib.es5.d.ts",
 									"line": 1077,
 									"character": 4
 								}
@@ -1408,7 +1369,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"fileName": "node_modules/.pnpm/typescript@5.9.3/node_modules/typescript/lib/lib.es5.d.ts",
 									"line": 1076,
 									"character": 4
 								}
@@ -1435,7 +1396,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"fileName": "node_modules/.pnpm/typescript@5.9.3/node_modules/typescript/lib/lib.es5.d.ts",
 									"line": 1078,
 									"character": 4
 								}
@@ -1502,7 +1463,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/@types/node/globals.d.ts",
+									"fileName": "node_modules/.pnpm/@types+node@22.20.5/node_modules/@types/node/globals.d.ts",
 									"line": 68,
 									"character": 4
 								}
@@ -1529,7 +1490,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/@types/node/globals.d.ts",
+									"fileName": "node_modules/.pnpm/@types+node@22.20.5/node_modules/@types/node/globals.d.ts",
 									"line": 52,
 									"character": 4
 								}
@@ -1630,7 +1591,7 @@
 									},
 									"sources": [
 										{
-											"fileName": "node_modules/@types/node/globals.d.ts",
+											"fileName": "node_modules/.pnpm/@types+node@22.20.5/node_modules/@types/node/globals.d.ts",
 											"line": 52,
 											"character": 4
 										}
@@ -1661,7 +1622,8 @@
 											"type": {
 												"type": "reference",
 												"target": {
-													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"packageName": "typescript",
+													"packagePath": "lib/lib.es5.d.ts",
 													"qualifiedName": "Function"
 												},
 												"name": "Function",
@@ -1698,7 +1660,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "node_modules/@types/node/globals.d.ts",
+									"fileName": "node_modules/.pnpm/@types+node@22.20.5/node_modules/@types/node/globals.d.ts",
 									"line": 56,
 									"character": 4
 								}
@@ -1729,7 +1691,7 @@
 									},
 									"sources": [
 										{
-											"fileName": "node_modules/@types/node/globals.d.ts",
+											"fileName": "node_modules/.pnpm/@types+node@22.20.5/node_modules/@types/node/globals.d.ts",
 											"line": 56,
 											"character": 4
 										}
@@ -1746,7 +1708,8 @@
 											"type": {
 												"type": "reference",
 												"target": {
-													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"packageName": "typescript",
+													"packagePath": "lib/lib.es5.d.ts",
 													"qualifiedName": "Error"
 												},
 												"name": "Error",
@@ -1766,7 +1729,8 @@
 												"elementType": {
 													"type": "reference",
 													"target": {
-														"sourceFileName": "node_modules/@types/node/globals.d.ts",
+														"packageName": "@types/node",
+														"packagePath": "globals.d.ts",
 														"qualifiedName": "NodeJS.CallSite"
 													},
 													"name": "CallSite",
@@ -1824,14 +1788,16 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 32,
-							"character": 13
+							"character": 13,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L32"
 						}
 					],
 					"extendedTypes": [
 						{
 							"type": "reference",
 							"target": {
-								"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+								"packageName": "typescript",
+								"packagePath": "lib/lib.es5.d.ts",
 								"qualifiedName": "Error"
 							},
 							"name": "Error",
@@ -1864,7 +1830,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 23,
-									"character": 50
+									"character": 50,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -1882,7 +1849,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 23,
-									"character": 35
+									"character": 35,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -1900,7 +1868,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 23,
-									"character": 90
+									"character": 90,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -1921,7 +1890,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 23,
-									"character": 66
+									"character": 66,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -1942,7 +1912,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 23,
-									"character": 120
+									"character": 120,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -1960,7 +1931,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 23,
-									"character": 138
+									"character": 138,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -1986,7 +1958,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 23,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L23"
 						}
 					]
 				},
@@ -2017,13 +1990,15 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 8,
-									"character": 40
+									"character": 40,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L8"
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
 									"qualifiedName": "Record"
 								},
 								"typeArguments": [
@@ -2053,7 +2028,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 8,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L8"
 						}
 					]
 				},
@@ -2082,7 +2058,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 68,
-									"character": 39
+									"character": 39,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 								}
 							],
 							"signatures": [
@@ -2096,7 +2073,8 @@
 										{
 											"fileName": "src/index.ts",
 											"line": 68,
-											"character": 39
+											"character": 39,
+											"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 										}
 									],
 									"parameters": [
@@ -2133,7 +2111,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 68,
-									"character": 166
+									"character": 166,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 								}
 							],
 							"signatures": [
@@ -2147,7 +2126,8 @@
 										{
 											"fileName": "src/index.ts",
 											"line": 68,
-											"character": 166
+											"character": 166,
+											"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 										}
 									],
 									"type": {
@@ -2169,7 +2149,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 68,
-									"character": 94
+									"character": 94,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 								}
 							],
 							"signatures": [
@@ -2183,7 +2164,8 @@
 										{
 											"fileName": "src/index.ts",
 											"line": 68,
-											"character": 94
+											"character": 94,
+											"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 										}
 									],
 									"parameters": [
@@ -2236,7 +2218,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 68,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L68"
 						}
 					]
 				},
@@ -2265,7 +2248,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 10,
-									"character": 56
+									"character": 56,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L10"
 								}
 							],
 							"type": {
@@ -2285,7 +2269,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 10,
-									"character": 93
+									"character": 93,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L10"
 								}
 							],
 							"type": {
@@ -2307,7 +2292,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 10,
-									"character": 72
+									"character": 72,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L10"
 								}
 							],
 							"type": {
@@ -2327,7 +2313,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 10,
-									"character": 38
+									"character": 38,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L10"
 								}
 							],
 							"type": {
@@ -2353,7 +2340,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 10,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L10"
 						}
 					]
 				},
@@ -2382,7 +2370,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 50
+									"character": 50,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2400,7 +2389,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 34
+									"character": 34,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2418,7 +2408,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 114
+									"character": 114,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2439,7 +2430,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 90
+									"character": 90,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2460,7 +2452,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 144
+									"character": 144,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2478,7 +2471,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 162
+									"character": 162,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2496,7 +2490,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 25,
-									"character": 66
+									"character": 66,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 								}
 							],
 							"type": {
@@ -2525,7 +2520,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 25,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L25"
 						}
 					]
 				},
@@ -2554,7 +2550,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 14,
-									"character": 42
+									"character": 42,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -2574,7 +2571,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 14,
-									"character": 107
+									"character": 107,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -2594,7 +2592,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 14,
-									"character": 58
+									"character": 58,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -2621,7 +2620,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 14,
-									"character": 30
+									"character": 30,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -2641,7 +2641,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 14,
-									"character": 84
+									"character": 84,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -2666,7 +2667,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 14,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L14"
 						}
 					]
 				},
@@ -2695,7 +2697,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 18,
-									"character": 36
+									"character": 36,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L18"
 								}
 							],
 							"type": {
@@ -2713,7 +2716,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 18,
-									"character": 54
+									"character": 54,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L18"
 								}
 							],
 							"type": {
@@ -2731,7 +2735,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 18,
-									"character": 77
+									"character": 77,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L18"
 								}
 							],
 							"type": {
@@ -2763,7 +2768,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 18,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L18"
 						}
 					]
 				},
@@ -2794,7 +2800,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 21,
-									"character": 43
+									"character": 43,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L21"
 								}
 							],
 							"type": {
@@ -2814,7 +2821,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 21,
-									"character": 70
+									"character": 70,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L21"
 								}
 							],
 							"type": {
@@ -2834,7 +2842,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 21,
-									"character": 102
+									"character": 102,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L21"
 								}
 							],
 							"type": {
@@ -2845,7 +2854,8 @@
 									"elementType": {
 										"type": "reference",
 										"target": {
-											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
 											"qualifiedName": "Readonly"
 										},
 										"typeArguments": [
@@ -2868,7 +2878,8 @@
 																{
 																	"fileName": "src/index.ts",
 																	"line": 19,
-																	"character": 39
+																	"character": 39,
+																	"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L19"
 																}
 															],
 															"type": {
@@ -2886,7 +2897,8 @@
 																{
 																	"fileName": "src/index.ts",
 																	"line": 19,
-																	"character": 53
+																	"character": 53,
+																	"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L19"
 																}
 															],
 															"type": {
@@ -2897,7 +2909,8 @@
 																	"elementType": {
 																		"type": "reference",
 																		"target": {
-																			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																			"packageName": "typescript",
+																			"packagePath": "lib/lib.es5.d.ts",
 																			"qualifiedName": "Readonly"
 																		},
 																		"typeArguments": [
@@ -2922,13 +2935,6 @@
 																49,
 																50
 															]
-														}
-													],
-													"sources": [
-														{
-															"fileName": "src/index.ts",
-															"line": 19,
-															"character": 37
 														}
 													]
 												}
@@ -2955,7 +2961,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 21,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L21"
 						}
 					]
 				},
@@ -2986,13 +2993,15 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 6,
-									"character": 55
+									"character": 55,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L6"
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
 									"qualifiedName": "Record"
 								},
 								"typeArguments": [
@@ -3021,7 +3030,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 6,
-									"character": 42
+									"character": 42,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L6"
 								}
 							],
 							"type": {
@@ -3039,7 +3049,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 6,
-									"character": 28
+									"character": 28,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L6"
 								}
 							],
 							"type": {
@@ -3062,7 +3073,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 6,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L6"
 						}
 					]
 				},
@@ -3101,7 +3113,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 4,
-									"character": 48
+									"character": 48,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L4"
 								}
 							],
 							"type": {
@@ -3121,7 +3134,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 4,
-									"character": 66
+									"character": 66,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L4"
 								}
 							],
 							"type": {
@@ -3139,7 +3153,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 4,
-									"character": 34
+									"character": 34,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L4"
 								}
 							],
 							"type": {
@@ -3162,7 +3177,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 4,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L4"
 						}
 					]
 				},
@@ -3191,7 +3207,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 16,
-									"character": 34
+									"character": 34,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L16"
 								}
 							],
 							"type": {
@@ -3209,7 +3226,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 16,
-									"character": 48
+									"character": 48,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L16"
 								}
 							],
 							"type": {
@@ -3240,7 +3258,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 16,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L16"
 						}
 					]
 				},
@@ -3269,7 +3288,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 2,
-									"character": 39
+									"character": 39,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L2"
 								}
 							],
 							"type": {
@@ -3294,13 +3314,15 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 2,
-									"character": 70
+									"character": 70,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L2"
 								}
 							],
 							"type": {
 								"type": "reference",
 								"target": {
-									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
 									"qualifiedName": "Record"
 								},
 								"typeArguments": [
@@ -3327,7 +3349,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 2,
-									"character": 27
+									"character": 27,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L2"
 								}
 							],
 							"type": {
@@ -3350,7 +3373,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 2,
-							"character": 17
+							"character": 17,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L2"
 						}
 					]
 				},
@@ -3380,7 +3404,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 29,
-							"character": 12
+							"character": 12,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L29"
 						}
 					],
 					"type": {
@@ -3419,7 +3444,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 27,
-							"character": 12
+							"character": 12,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L27"
 						}
 					],
 					"type": {
@@ -3478,7 +3504,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 12,
-							"character": 12
+							"character": 12,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L12"
 						}
 					],
 					"type": {
@@ -3489,13 +3516,6 @@
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
-							"sources": [
-								{
-									"fileName": "src/index.ts",
-									"line": 12,
-									"character": 30
-								}
-							],
 							"signatures": [
 								{
 									"id": 29,
@@ -3537,7 +3557,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 65,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L65"
 						}
 					],
 					"signatures": [
@@ -3567,7 +3588,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 65,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L65"
 								}
 							],
 							"parameters": [
@@ -3604,7 +3626,8 @@
 						{
 							"fileName": "src/index.ts",
 							"line": 78,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L78"
 						}
 					],
 					"signatures": [
@@ -3634,7 +3657,8 @@
 								{
 									"fileName": "src/index.ts",
 									"line": 78,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L78"
 								}
 							],
 							"parameters": [
@@ -3706,7 +3730,8 @@
 				{
 					"fileName": "src/index.ts",
 					"line": 1,
-					"character": 0
+					"character": 0,
+					"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/index.ts#L1"
 				}
 			]
 		},
@@ -3727,7 +3752,8 @@
 						{
 							"fileName": "src/react.ts",
 							"line": 7,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L7"
 						}
 					],
 					"signatures": [
@@ -3749,7 +3775,8 @@
 								{
 									"fileName": "src/react.ts",
 									"line": 7,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L7"
 								}
 							],
 							"parameters": [
@@ -3825,7 +3852,8 @@
 						{
 							"fileName": "src/react.ts",
 							"line": 14,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L14"
 						}
 					],
 					"signatures": [
@@ -3855,7 +3883,8 @@
 								{
 									"fileName": "src/react.ts",
 									"line": 14,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L14"
 								}
 							],
 							"parameters": [
@@ -3894,13 +3923,6 @@
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
-									"sources": [
-										{
-											"fileName": "src/react.ts",
-											"line": 15,
-											"character": 9
-										}
-									],
 									"signatures": [
 										{
 											"id": 144,
@@ -3908,13 +3930,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"sources": [
-												{
-													"fileName": "src/react.ts",
-													"line": 15,
-													"character": 9
-												}
-											],
 											"parameters": [
 												{
 													"id": 145,
@@ -3966,7 +3981,8 @@
 						{
 							"fileName": "src/react.ts",
 							"line": 21,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L21"
 						}
 					],
 					"signatures": [
@@ -3988,7 +4004,8 @@
 								{
 									"fileName": "src/react.ts",
 									"line": 21,
-									"character": 16
+									"character": 16,
+									"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L21"
 								}
 							],
 							"parameters": [
@@ -4069,7 +4086,8 @@
 				{
 					"fileName": "src/react.ts",
 					"line": 1,
-					"character": 0
+					"character": 0,
+					"url": "https://github.com/teelabs/tackle/blob/3fb2b980a9af8d9d9a7ec517eed39380afa98835/src/react.ts#L1"
 				}
 			]
 		}
@@ -4230,688 +4248,859 @@
 	],
 	"symbolIdMap": {
 		"1": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": ""
 		},
 		"2": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "buildPolicy"
 		},
 		"3": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "buildPolicy"
 		},
 		"4": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "definition"
 		},
 		"5": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "createAuthorizationEngine"
 		},
 		"6": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "createAuthorizationEngine"
 		},
 		"7": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "initial"
 		},
 		"8": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Subject"
 		},
 		"9": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Subject.id"
 		},
 		"10": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Subject.assignments"
 		},
 		"11": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Subject.attributes"
 		},
 		"12": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleAssignment"
 		},
 		"13": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleAssignment.role"
 		},
 		"14": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleAssignment.active"
 		},
 		"15": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleAssignment.policyVersion"
 		},
 		"16": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Resource"
 		},
 		"17": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Resource.type"
 		},
 		"18": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Resource.id"
 		},
 		"19": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Resource.attributes"
 		},
 		"20": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationContext"
 		},
 		"21": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationContext.attributes"
 		},
 		"22": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationInput"
 		},
 		"23": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationInput.subject"
 		},
 		"24": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationInput.action"
 		},
 		"25": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationInput.resource"
 		},
 		"26": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationInput.context"
 		},
 		"27": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyCondition"
 		},
 		"28": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "__type"
 		},
 		"29": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "__type"
 		},
 		"30": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "input"
 		},
 		"31": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Permission"
 		},
 		"32": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Permission.id"
 		},
 		"33": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Permission.action"
 		},
 		"34": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Permission.effect"
 		},
 		"35": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Permission.resourceType"
 		},
 		"36": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "Permission.condition"
 		},
 		"37": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleDefinition"
 		},
 		"38": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleDefinition.name"
 		},
 		"39": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "RoleDefinition.permissions"
 		},
 		"40": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyDefinition"
 		},
 		"41": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyDefinition.policyId"
 		},
 		"42": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyDefinition.policyVersion"
 		},
 		"43": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyDefinition.roles"
 		},
 		"44": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicySnapshot"
 		},
 		"45": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicySnapshot.policyId"
 		},
 		"46": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicySnapshot.policyVersion"
 		},
 		"47": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicySnapshot.roles"
 		},
 		"48": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "__type"
 		},
 		"49": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "__type.name"
 		},
 		"50": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "__type.permissions"
 		},
 		"51": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision"
 		},
 		"52": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision.allowed"
 		},
 		"53": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision.action"
 		},
 		"54": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision.matchedRoles"
 		},
 		"55": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision.matchedPermissions"
 		},
 		"56": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision.policyId"
 		},
 		"57": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AllowedDecision.policyVersion"
 		},
 		"58": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision"
 		},
 		"59": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.allowed"
 		},
 		"60": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.action"
 		},
 		"61": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.reason"
 		},
 		"62": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.matchedRoles"
 		},
 		"63": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.matchedPermissions"
 		},
 		"64": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.policyId"
 		},
 		"65": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DeniedDecision.policyVersion"
 		},
 		"66": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "DecisionReason"
 		},
 		"67": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationDecision"
 		},
 		"68": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyValidationError"
 		},
 		"69": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "ErrorConstructor.captureStackTrace"
 		},
 		"70": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "ErrorConstructor.captureStackTrace"
 		},
 		"71": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "targetObject"
 		},
 		"72": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "constructorOpt"
 		},
 		"73": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "ErrorConstructor.prepareStackTrace"
 		},
 		"74": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "ErrorConstructor.prepareStackTrace"
 		},
 		"75": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "err"
 		},
 		"76": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "stackTraces"
 		},
 		"77": {
-			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"packageName": "@types/node",
+			"packagePath": "globals.d.ts",
 			"qualifiedName": "ErrorConstructor.stackTraceLimit"
 		},
 		"78": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyValidationError.__constructor"
 		},
 		"79": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyValidationError"
 		},
 		"80": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "issues"
 		},
 		"81": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "PolicyValidationError.issues"
 		},
 		"82": {
-			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
 			"qualifiedName": "Error.name"
 		},
 		"83": {
-			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
 			"qualifiedName": "Error.message"
 		},
 		"84": {
-			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es5.d.ts",
 			"qualifiedName": "Error.stack"
 		},
 		"85": {
-			"sourceFileName": "node_modules/typescript/lib/lib.es2022.error.d.ts",
+			"packageName": "typescript",
+			"packagePath": "lib/lib.es2022.error.d.ts",
 			"qualifiedName": "Error.cause"
 		},
 		"86": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine"
 		},
 		"87": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine.can"
 		},
 		"88": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine.can"
 		},
 		"89": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "input"
 		},
 		"90": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine.replace"
 		},
 		"91": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine.replace"
 		},
 		"92": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "definition"
 		},
 		"93": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine.getSnapshot"
 		},
 		"94": {
-			"sourceFileName": "src/index.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/index.ts",
 			"qualifiedName": "AuthorizationEngine.getSnapshot"
 		},
 		"95": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": ""
 		},
 		"96": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "can"
 		},
 		"97": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "can"
 		},
 		"98": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "action"
 		},
 		"99": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "options"
 		},
 		"100": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__function"
 		},
 		"101": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__function"
 		},
 		"102": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "request"
 		},
 		"103": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "response"
 		},
 		"104": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "next"
 		},
 		"105": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeRequest"
 		},
 		"106": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeRequest.subject"
 		},
 		"107": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeRequest.params"
 		},
 		"108": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeRequest.tackle"
 		},
 		"109": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"110": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type.decision"
 		},
 		"111": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeResponse"
 		},
 		"112": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeResponse.status"
 		},
 		"113": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeResponse.status"
 		},
 		"114": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "code"
 		},
 		"115": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeResponse.json"
 		},
 		"116": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressLikeResponse.json"
 		},
 		"117": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "body"
 		},
 		"118": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressNext"
 		},
 		"119": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"120": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"121": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "error"
 		},
 		"122": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressCanOptions"
 		},
 		"123": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressCanOptions.engine"
 		},
 		"124": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressCanOptions.resolveResource"
 		},
 		"125": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"126": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"127": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "request"
 		},
 		"128": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "ExpressCanOptions.resolveContext"
 		},
 		"129": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"130": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "__type"
 		},
 		"131": {
-			"sourceFileName": "src/express.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/express.ts",
 			"qualifiedName": "request"
 		},
 		"132": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": ""
 		},
 		"133": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "can"
 		},
 		"134": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "can"
 		},
 		"135": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "engine"
 		},
 		"136": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "subject"
 		},
 		"137": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "action"
 		},
 		"138": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "resource"
 		},
 		"139": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "createCan"
 		},
 		"140": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "createCan"
 		},
 		"141": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "engine"
 		},
 		"142": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "subject"
 		},
 		"143": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "__function"
 		},
 		"144": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "__function"
 		},
 		"145": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "action"
 		},
 		"146": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "resource"
 		},
 		"147": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "useCan"
 		},
 		"148": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "useCan"
 		},
 		"149": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "engine"
 		},
 		"150": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "subject"
 		},
 		"151": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "action"
 		},
 		"152": {
-			"sourceFileName": "src/react.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/react.ts",
 			"qualifiedName": "resource"
 		},
 		"153": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": ""
 		},
 		"154": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "createDrizzleAssignmentResolver"
 		},
 		"155": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "createDrizzleAssignmentResolver"
 		},
 		"156": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "DB"
 		},
 		"157": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "options"
 		},
 		"158": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "__object"
 		},
 		"159": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "__object.load"
 		},
 		"160": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "__object.load"
 		},
 		"161": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "subjectId"
 		},
 		"162": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "context"
 		},
 		"163": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "DrizzleAssignmentResolverOptions"
 		},
 		"164": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "DrizzleAssignmentResolverOptions.db"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions.DB"
 		},
 		"165": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "DrizzleAssignmentResolverOptions.loadAssignments"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions.db"
 		},
 		"166": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "__type"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions.loadAssignments"
 		},
 		"167": {
-			"sourceFileName": "src/drizzle.ts",
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
 			"qualifiedName": "__type"
 		},
 		"168": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "db"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "__type"
 		},
 		"169": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "subjectId"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "db"
 		},
 		"170": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "context"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "subjectId"
 		},
 		"171": {
-			"sourceFileName": "src/drizzle.ts",
-			"qualifiedName": "DrizzleAssignmentResolverOptions.DB"
+			"packageName": "@teelabs/tackle",
+			"packagePath": "src/drizzle.ts",
+			"qualifiedName": "context"
 		}
 	},
 	"files": {
@@ -4927,13 +5116,17 @@
 			"9": "docs/core-api.md",
 			"10": "docs/policy-authoring.md",
 			"11": "docs/security-model.md",
-			"12": "docs/integration-boundaries.md"
+			"12": "docs/integration-boundaries.md",
+			"13": "README.md",
+			"14": ""
 		},
 		"reflections": {
 			"1": 1,
 			"2": 95,
 			"3": 132,
-			"4": 153
+			"4": 153,
+			"13": 0,
+			"14": 0
 		}
 	}
 }
