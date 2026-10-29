@@ -1,2 +1,18 @@
-import parser from "@typescript-eslint/parser";
-export default [{ ignores: ["dist", "node_modules"] }, { files: ["**/*.ts"], languageOptions: { parser }, rules: { "no-unused-vars": "off" } }, { files: ["**/*.js"], rules: { "no-unused-vars": "off" } }];
+import js from "@eslint/js";
+import { defineConfig } from "eslint/config";
+import tseslint from "typescript-eslint";
+
+export default defineConfig(
+  { ignores: ["dist", "node_modules", "docs/api.json"] },
+  js.configs.recommended,
+  {
+    files: ["**/*.ts"],
+    extends: [tseslint.configs.recommended],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+);

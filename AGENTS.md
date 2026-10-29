@@ -4,7 +4,7 @@ Read `README.md` and the relevant guide before changing public APIs. TypeScript 
 
 Preserve deny-overrides-allow, last-known-good atomic policy replacement, and predicate-error denial. State assumptions explicitly. Public API changes require examples, tests, TSDoc, and SemVer/changelog classification. Distinguish core, adapter, and consumer responsibilities, and do not claim guarantees Tackle cannot enforce.
 
-Before handoff run `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, `npm run docs:check`, and `npm run pack:dry-run`. Do not publish, release, or modify external repositories without explicit authorization.
+Before handoff run `pnpm run lint`, `pnpm run typecheck`, `pnpm test`, `pnpm run build`, `pnpm run docs:check`, and `pnpm run pack:dry-run`. Do not publish, release, or modify external repositories without explicit authorization.
 
 ## Required change checklist
 

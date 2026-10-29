@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A framework-agnostic RBAC and ABAC authorization engine.",
   "type": "module",
+  "packageManager": "pnpm@12.15.0",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,20 +17,21 @@
   "scripts": {
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "npm run build && vitest run",
-    "build": "tsup",
+    "test": "pnpm run build && vitest run",
+    "build": "tsdown",
     "docs:api": "typedoc --options typedoc.json",
-    "docs:check": "npm run docs:api && tsx scripts/check-docs.ts",
-    "pack:dry-run": "npm pack --dry-run"
+    "docs:check": "pnpm run docs:api && tsx scripts/check-docs.ts",
+    "pack:dry-run": "pnpm pack --dry-run"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.18.0",
+    "@eslint/js": "^9.39.1",
     "@types/node": "^22.10.0",
     "eslint": "^9.17.0",
     "typescript": "^5.7.2",
     "tsx": "^4.19.2",
-    "tsup": "^8.3.5",
-    "typedoc": "^0.27.9",
+    "tsdown": "^0.20.3",
+    "typescript-eslint": "^8.46.3",
+    "typedoc": "^0.28.20",
     "vitest": "^2.1.8"
   }
 }

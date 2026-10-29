@@ -14,23 +14,50 @@ jobs:
     timeout-minutes: 15
     steps:
       - name: Check out source
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/checkout@v5
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 20
-          cache: npm
+          version: 12.15.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
       - name: Lint
-        run: npm run lint
+        run: pnpm run lint
       - name: Typecheck
-        run: npm run typecheck
+        run: pnpm run typecheck
       - name: Test
-        run: npm test
+        run: pnpm test
       - name: Build
-        run: npm run build
+        run: pnpm run build
       - name: Validate documentation and generated API docs
-        run: npm run docs:check
+        run: pnpm run docs:check
       - name: Inspect package tarball
-        run: npm run pack:dry-run
+        run: pnpm run pack:dry-run
+
+  compatibility:
+    name: compatibility (Node 26)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.15.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 26
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Typecheck
+        run: pnpm run typecheck
+      - name: Test and build
+        run: pnpm test
