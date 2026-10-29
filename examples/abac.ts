@@ -1,0 +1,3 @@
+import { buildPolicy, createAuthorizationEngine } from "../src/index.js";
+const engine = createAuthorizationEngine(buildPolicy({ policyId: "example", policyVersion: "1", roles: [{ name: "owner", permissions: [{ id: "own", action: "document.update", effect: "allow", condition: input => input.resource?.attributes?.ownerId === input.subject.id && input.context?.attributes?.channel === "web" }] }] }));
+console.log(engine.can({ subject: { id: "subject-1", assignments: [{ role: "owner" }] }, action: "document.update", resource: { type: "document", attributes: { ownerId: "subject-1" } }, context: { attributes: { channel: "web" } } }));

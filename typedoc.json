@@ -1,0 +1,7 @@
+{
+  "entryPoints": ["src/index.ts", "src/express.ts", "src/react.ts", "src/drizzle.ts"],
+  "json": "docs/api.json",
+  "excludePrivate": true,
+  "excludeInternal": true,
+  "entryPointStrategy": "resolve"
+}

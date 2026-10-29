@@ -1,0 +1,35 @@
+{
+  "name": "@teelabs/tackle",
+  "version": "0.1.0",
+  "description": "A framework-agnostic RBAC and ABAC authorization engine.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "require": "./dist/index.cjs" },
+    "./express": { "types": "./dist/express.d.ts", "import": "./dist/express.js", "require": "./dist/express.cjs" },
+    "./react": { "types": "./dist/react.d.ts", "import": "./dist/react.js", "require": "./dist/react.cjs" },
+    "./drizzle": { "types": "./dist/drizzle.d.ts", "import": "./dist/drizzle.js", "require": "./dist/drizzle.cjs" }
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && vitest run",
+    "build": "tsup",
+    "docs:api": "typedoc --options typedoc.json",
+    "docs:check": "npm run docs:api && tsx scripts/check-docs.ts",
+    "pack:dry-run": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.18.0",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2",
+    "tsup": "^8.3.5",
+    "typedoc": "^0.27.9",
+    "vitest": "^2.1.8"
+  }
+}

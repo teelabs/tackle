@@ -1,0 +1,4939 @@
+{
+	"id": 0,
+	"name": "@teelabs/tackle",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 153,
+			"name": "drizzle",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 163,
+					"name": "DrizzleAssignmentResolverOptions",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Consumer-owned callback contract for assignment loading; "
+							},
+							{
+								"kind": "code",
+								"text": "`DB`"
+							},
+							{
+								"kind": "text",
+								"text": " is deliberately unconstrained."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 164,
+							"name": "db",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/drizzle.ts",
+									"line": 4,
+									"character": 56
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 171,
+								"name": "DB",
+								"package": "@teelabs/tackle",
+								"qualifiedName": "DrizzleAssignmentResolverOptions.DB",
+								"refersToTypeParameter": true
+							}
+						},
+						{
+							"id": 165,
+							"name": "loadAssignments",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/drizzle.ts",
+									"line": 4,
+									"character": 64
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 166,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/drizzle.ts",
+											"line": 4,
+											"character": 81
+										}
+									],
+									"signatures": [
+										{
+											"id": 167,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/drizzle.ts",
+													"line": 4,
+													"character": 81
+												}
+											],
+											"parameters": [
+												{
+													"id": 168,
+													"name": "db",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 171,
+														"name": "DB",
+														"package": "@teelabs/tackle",
+														"qualifiedName": "DrizzleAssignmentResolverOptions.DB",
+														"refersToTypeParameter": true
+													}
+												},
+												{
+													"id": 169,
+													"name": "subjectId",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 170,
+													"name": "context",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"type": {
+														"type": "reference",
+														"target": 20,
+														"name": "AuthorizationContext",
+														"package": "@teelabs/tackle"
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": 12,
+															"name": "RoleAssignment",
+															"package": "@teelabs/tackle"
+														}
+													},
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Promise"
+														},
+														"typeArguments": [
+															{
+																"type": "array",
+																"elementType": {
+																	"type": "reference",
+																	"target": 12,
+																	"name": "RoleAssignment",
+																	"package": "@teelabs/tackle"
+																}
+															}
+														],
+														"name": "Promise",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								164,
+								165
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/drizzle.ts",
+							"line": 4,
+							"character": 17
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 171,
+							"name": "DB",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					]
+				},
+				{
+					"id": 154,
+					"name": "createDrizzleAssignmentResolver",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/drizzle.ts",
+							"line": 9,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 155,
+							"name": "createDrizzleAssignmentResolver",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Creates a schema-agnostic assignment resolver.\nIt opens no connection and defines no migrations; callback failures propagate."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/drizzle.ts",
+									"line": 9,
+									"character": 16
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 156,
+									"name": "DB",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 157,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 163,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 156,
+												"name": "DB",
+												"package": "@teelabs/tackle",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "DrizzleAssignmentResolverOptions",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 158,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 159,
+											"name": "load",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/drizzle.ts",
+													"line": 10,
+													"character": 11
+												}
+											],
+											"signatures": [
+												{
+													"id": 160,
+													"name": "load",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/drizzle.ts",
+															"line": 10,
+															"character": 11
+														}
+													],
+													"parameters": [
+														{
+															"id": 161,
+															"name": "subjectId",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														},
+														{
+															"id": 162,
+															"name": "context",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {
+																"isOptional": true
+															},
+															"type": {
+																"type": "reference",
+																"target": 20,
+																"name": "AuthorizationContext",
+																"package": "@teelabs/tackle"
+															}
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "array",
+																"elementType": {
+																	"type": "reference",
+																	"target": 12,
+																	"name": "RoleAssignment",
+																	"package": "@teelabs/tackle"
+																}
+															},
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																	"qualifiedName": "Promise"
+																},
+																"typeArguments": [
+																	{
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": 12,
+																			"name": "RoleAssignment",
+																			"package": "@teelabs/tackle"
+																		}
+																	}
+																],
+																"name": "Promise",
+																"package": "typescript"
+															}
+														]
+													}
+												}
+											]
+										}
+									],
+									"groups": [
+										{
+											"title": "Methods",
+											"children": [
+												159
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/drizzle.ts",
+											"line": 10,
+											"character": 9
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"children": [
+						163
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						154
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/drizzle.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 95,
+			"name": "express",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 122,
+					"name": "ExpressCanOptions",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Consumer-supplied engine and trusted resolvers used by the middleware."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 123,
+							"name": "engine",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 10,
+									"character": 37
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 86,
+								"name": "AuthorizationEngine",
+								"package": "@teelabs/tackle"
+							}
+						},
+						{
+							"id": 128,
+							"name": "resolveContext",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 10,
+									"character": 171
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 129,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/express.ts",
+											"line": 10,
+											"character": 188
+										}
+									],
+									"signatures": [
+										{
+											"id": 130,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/express.ts",
+													"line": 10,
+													"character": 188
+												}
+											],
+											"parameters": [
+												{
+													"id": 131,
+													"name": "request",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 105,
+														"name": "ExpressLikeRequest",
+														"package": "@teelabs/tackle"
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "reference",
+														"target": 20,
+														"name": "AuthorizationContext",
+														"package": "@teelabs/tackle"
+													},
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Promise"
+														},
+														"typeArguments": [
+															{
+																"type": "union",
+																"types": [
+																	{
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	{
+																		"type": "reference",
+																		"target": 20,
+																		"name": "AuthorizationContext",
+																		"package": "@teelabs/tackle"
+																	}
+																]
+															}
+														],
+														"name": "Promise",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 124,
+							"name": "resolveResource",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 10,
+									"character": 66
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 125,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/express.ts",
+											"line": 10,
+											"character": 84
+										}
+									],
+									"signatures": [
+										{
+											"id": 126,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/express.ts",
+													"line": 10,
+													"character": 84
+												}
+											],
+											"parameters": [
+												{
+													"id": 127,
+													"name": "request",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 105,
+														"name": "ExpressLikeRequest",
+														"package": "@teelabs/tackle"
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "reference",
+														"target": 16,
+														"name": "Resource",
+														"package": "@teelabs/tackle"
+													},
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Promise"
+														},
+														"typeArguments": [
+															{
+																"type": "union",
+																"types": [
+																	{
+																		"type": "intrinsic",
+																		"name": "undefined"
+																	},
+																	{
+																		"type": "reference",
+																		"target": 16,
+																		"name": "Resource",
+																		"package": "@teelabs/tackle"
+																	}
+																]
+															}
+														],
+														"name": "Promise",
+														"package": "typescript"
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								123,
+								128,
+								124
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/express.ts",
+							"line": 10,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 105,
+					"name": "ExpressLikeRequest",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Minimal request shape required by the Express adapter; Express remains an optional peer."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 107,
+							"name": "params",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 4,
+									"character": 57
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										]
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 106,
+							"name": "subject",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 4,
+									"character": 38
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 8,
+								"name": "Subject",
+								"package": "@teelabs/tackle"
+							}
+						},
+						{
+							"id": 108,
+							"name": "tackle",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 4,
+									"character": 102
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 109,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 110,
+											"name": "decision",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/express.ts",
+													"line": 4,
+													"character": 113
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": 67,
+												"name": "AuthorizationDecision",
+												"package": "@teelabs/tackle"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												110
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/express.ts",
+											"line": 4,
+											"character": 111
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								107,
+								106,
+								108
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/express.ts",
+							"line": 4,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 111,
+					"name": "ExpressLikeResponse",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Minimal response shape required by the adapter."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 115,
+							"name": "json",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 6,
+									"character": 82
+								}
+							],
+							"signatures": [
+								{
+									"id": 116,
+									"name": "json",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/express.ts",
+											"line": 6,
+											"character": 82
+										}
+									],
+									"parameters": [
+										{
+											"id": 117,
+											"name": "body",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 112,
+							"name": "status",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 6,
+									"character": 39
+								}
+							],
+							"signatures": [
+								{
+									"id": 113,
+									"name": "status",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/express.ts",
+											"line": 6,
+											"character": 39
+										}
+									],
+									"parameters": [
+										{
+											"id": 114,
+											"name": "code",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 111,
+										"name": "ExpressLikeResponse",
+										"package": "@teelabs/tackle"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"children": [
+								115,
+								112
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/express.ts",
+							"line": 6,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 118,
+					"name": "ExpressNext",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The continuation callback supplied by Express."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/express.ts",
+							"line": 8,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 119,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 8,
+									"character": 26
+								}
+							],
+							"signatures": [
+								{
+									"id": 120,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"parameters": [
+										{
+											"id": 121,
+											"name": "error",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 96,
+					"name": "can",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/express.ts",
+							"line": 16,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 97,
+							"name": "can",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Creates Express-compatible middleware. It maps missing subjects to 401 and denied decisions to 403.\nThe adapter does not authenticate, trust client roles, query databases, or replace service checks."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/express.ts",
+									"line": 16,
+									"character": 16
+								}
+							],
+							"parameters": [
+								{
+									"id": 98,
+									"name": "action",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 99,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 122,
+										"name": "ExpressCanOptions",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 100,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/express.ts",
+											"line": 17,
+											"character": 9
+										}
+									],
+									"signatures": [
+										{
+											"id": 101,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/express.ts",
+													"line": 17,
+													"character": 9
+												}
+											],
+											"parameters": [
+												{
+													"id": 102,
+													"name": "request",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 105,
+														"name": "ExpressLikeRequest",
+														"package": "@teelabs/tackle"
+													}
+												},
+												{
+													"id": 103,
+													"name": "response",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 111,
+														"name": "ExpressLikeResponse",
+														"package": "@teelabs/tackle"
+													}
+												},
+												{
+													"id": 104,
+													"name": "next",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": 118,
+														"name": "ExpressNext",
+														"package": "@teelabs/tackle"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "void"
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"children": [
+						122,
+						105,
+						111
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						118
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						96
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/express.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "index",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 68,
+					"name": "PolicyValidationError",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Thrown when a policy cannot be activated because its definition is malformed."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 78,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 32,
+									"character": 78
+								}
+							],
+							"signatures": [
+								{
+									"id": 79,
+									"name": "PolicyValidationError",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 32,
+											"character": 78
+										}
+									],
+									"parameters": [
+										{
+											"id": 80,
+											"name": "issues",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 68,
+										"name": "PolicyValidationError",
+										"package": "@teelabs/tackle"
+									},
+									"overwrites": {
+										"type": "reference",
+										"target": -1,
+										"name": "Error.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.constructor"
+							}
+						},
+						{
+							"id": 85,
+							"name": "cause",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isExternal": true,
+								"isOptional": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es2022.error.d.ts",
+									"line": 26,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.cause"
+							}
+						},
+						{
+							"id": 81,
+							"name": "issues",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 32,
+									"character": 60
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						},
+						{
+							"id": 83,
+							"name": "message",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isExternal": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 1077,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.message"
+							}
+						},
+						{
+							"id": 82,
+							"name": "name",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isExternal": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 1076,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.name"
+							}
+						},
+						{
+							"id": 84,
+							"name": "stack",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isExternal": true,
+								"isOptional": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"line": 1078,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.stack"
+							}
+						},
+						{
+							"id": 77,
+							"name": "stackTraceLimit",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isStatic": true,
+								"isExternal": true,
+								"isInherited": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The "
+									},
+									{
+										"kind": "code",
+										"text": "`Error.stackTraceLimit`"
+									},
+									{
+										"kind": "text",
+										"text": " property specifies the number of stack frames\ncollected by a stack trace (whether generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`new Error().stack`"
+									},
+									{
+										"kind": "text",
+										"text": " or\n"
+									},
+									{
+										"kind": "code",
+										"text": "`Error.captureStackTrace(obj)`"
+									},
+									{
+										"kind": "text",
+										"text": ").\n\nThe default value is "
+									},
+									{
+										"kind": "code",
+										"text": "`10`"
+									},
+									{
+										"kind": "text",
+										"text": " but may be set to any valid JavaScript number. Changes\nwill affect any stack trace captured _after_ the value has been changed.\n\nIf set to a non-number value, or set to a negative number, stack traces will\nnot capture any frames."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 68,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.stackTraceLimit"
+							}
+						},
+						{
+							"id": 69,
+							"name": "captureStackTrace",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isStatic": true,
+								"isExternal": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 52,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 70,
+									"name": "captureStackTrace",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true,
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Creates a "
+											},
+											{
+												"kind": "code",
+												"text": "`.stack`"
+											},
+											{
+												"kind": "text",
+												"text": " property on "
+											},
+											{
+												"kind": "code",
+												"text": "`targetObject`"
+											},
+											{
+												"kind": "text",
+												"text": ", which when accessed returns\na string representing the location in the code at which\n"
+											},
+											{
+												"kind": "code",
+												"text": "`Error.captureStackTrace()`"
+											},
+											{
+												"kind": "text",
+												"text": " was called.\n\n"
+											},
+											{
+												"kind": "code",
+												"text": "```js\nconst myObject = {};\nError.captureStackTrace(myObject);\nmyObject.stack;  // Similar to `new Error().stack`\n```"
+											},
+											{
+												"kind": "text",
+												"text": "\n\nThe first line of the trace will be prefixed with\n"
+											},
+											{
+												"kind": "code",
+												"text": "`${myObject.name}: ${myObject.message}`"
+											},
+											{
+												"kind": "text",
+												"text": ".\n\nThe optional "
+											},
+											{
+												"kind": "code",
+												"text": "`constructorOpt`"
+											},
+											{
+												"kind": "text",
+												"text": " argument accepts a function. If given, all frames\nabove "
+											},
+											{
+												"kind": "code",
+												"text": "`constructorOpt`"
+											},
+											{
+												"kind": "text",
+												"text": ", including "
+											},
+											{
+												"kind": "code",
+												"text": "`constructorOpt`"
+											},
+											{
+												"kind": "text",
+												"text": ", will be omitted from the\ngenerated stack trace.\n\nThe "
+											},
+											{
+												"kind": "code",
+												"text": "`constructorOpt`"
+											},
+											{
+												"kind": "text",
+												"text": " argument is useful for hiding implementation\ndetails of error generation from the user. For instance:\n\n"
+											},
+											{
+												"kind": "code",
+												"text": "```js\nfunction a() {\n  b();\n}\n\nfunction b() {\n  c();\n}\n\nfunction c() {\n  // Create an error without stack trace to avoid calculating the stack trace twice.\n  const { stackTraceLimit } = Error;\n  Error.stackTraceLimit = 0;\n  const error = new Error();\n  Error.stackTraceLimit = stackTraceLimit;\n\n  // Capture the stack trace above function b\n  Error.captureStackTrace(error, b); // Neither function c, nor b is included in the stack trace\n  throw error;\n}\n\na();\n```"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/@types/node/globals.d.ts",
+											"line": 52,
+											"character": 4
+										}
+									],
+									"parameters": [
+										{
+											"id": 71,
+											"name": "targetObject",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "object"
+											}
+										},
+										{
+											"id": 72,
+											"name": "constructorOpt",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Function"
+												},
+												"name": "Function",
+												"package": "typescript"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": -1,
+										"name": "Error.captureStackTrace"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.captureStackTrace"
+							}
+						},
+						{
+							"id": 73,
+							"name": "prepareStackTrace",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {
+								"isStatic": true,
+								"isExternal": true,
+								"isInherited": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/node/globals.d.ts",
+									"line": 56,
+									"character": 4
+								}
+							],
+							"signatures": [
+								{
+									"id": 74,
+									"name": "prepareStackTrace",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true,
+										"isInherited": true
+									},
+									"comment": {
+										"summary": [],
+										"blockTags": [
+											{
+												"tag": "@see",
+												"content": [
+													{
+														"kind": "text",
+														"text": "https://v8.dev/docs/stack-trace-api#customizing-stack-traces"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/@types/node/globals.d.ts",
+											"line": 56,
+											"character": 4
+										}
+									],
+									"parameters": [
+										{
+											"id": 75,
+											"name": "err",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Error"
+												},
+												"name": "Error",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 76,
+											"name": "stackTraces",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "node_modules/@types/node/globals.d.ts",
+														"qualifiedName": "NodeJS.CallSite"
+													},
+													"name": "CallSite",
+													"package": "@types/node",
+													"qualifiedName": "NodeJS.CallSite"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"target": -1,
+										"name": "Error.prepareStackTrace"
+									}
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "Error.prepareStackTrace"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								78
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								85,
+								81,
+								83,
+								82,
+								84,
+								77
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								69,
+								73
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 32,
+							"character": 13
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": {
+								"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+								"qualifiedName": "Error"
+							},
+							"name": "Error",
+							"package": "typescript"
+						}
+					]
+				},
+				{
+					"id": 51,
+					"name": "AllowedDecision",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Structured success result with auditable provenance."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 53,
+							"name": "action",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 23,
+									"character": 50
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 52,
+							"name": "allowed",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 23,
+									"character": 35
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": true
+							}
+						},
+						{
+							"id": 55,
+							"name": "matchedPermissions",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 23,
+									"character": 90
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						},
+						{
+							"id": 54,
+							"name": "matchedRoles",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 23,
+									"character": 66
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						},
+						{
+							"id": 56,
+							"name": "policyId",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 23,
+									"character": 120
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 57,
+							"name": "policyVersion",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 23,
+									"character": 138
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								53,
+								52,
+								55,
+								54,
+								56,
+								57
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 23,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 20,
+					"name": "AuthorizationContext",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Request/environment attributes supplied by the consumer."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 21,
+							"name": "attributes",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 8,
+									"character": 40
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								21
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 8,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 86,
+					"name": "AuthorizationEngine",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A synchronous engine that evaluates one immutable policy snapshot at a time."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 87,
+							"name": "can",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 68,
+									"character": 39
+								}
+							],
+							"signatures": [
+								{
+									"id": 88,
+									"name": "can",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 68,
+											"character": 39
+										}
+									],
+									"parameters": [
+										{
+											"id": 89,
+											"name": "input",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 22,
+												"name": "AuthorizationInput",
+												"package": "@teelabs/tackle"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 67,
+										"name": "AuthorizationDecision",
+										"package": "@teelabs/tackle"
+									}
+								}
+							]
+						},
+						{
+							"id": 93,
+							"name": "getSnapshot",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 68,
+									"character": 166
+								}
+							],
+							"signatures": [
+								{
+									"id": 94,
+									"name": "getSnapshot",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 68,
+											"character": 166
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 44,
+										"name": "PolicySnapshot",
+										"package": "@teelabs/tackle"
+									}
+								}
+							]
+						},
+						{
+							"id": 90,
+							"name": "replace",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 68,
+									"character": 94
+								}
+							],
+							"signatures": [
+								{
+									"id": 91,
+									"name": "replace",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 68,
+											"character": 94
+										}
+									],
+									"parameters": [
+										{
+											"id": 92,
+											"name": "definition",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "reference",
+														"target": 40,
+														"name": "PolicyDefinition",
+														"package": "@teelabs/tackle"
+													},
+													{
+														"type": "reference",
+														"target": 44,
+														"name": "PolicySnapshot",
+														"package": "@teelabs/tackle"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 44,
+										"name": "PolicySnapshot",
+										"package": "@teelabs/tackle"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"children": [
+								87,
+								93,
+								90
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 68,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 22,
+					"name": "AuthorizationInput",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Trusted input to the synchronous authorization operation."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 24,
+							"name": "action",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 10,
+									"character": 56
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 26,
+							"name": "context",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 10,
+									"character": 93
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 20,
+								"name": "AuthorizationContext",
+								"package": "@teelabs/tackle"
+							}
+						},
+						{
+							"id": 25,
+							"name": "resource",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 10,
+									"character": 72
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 16,
+								"name": "Resource",
+								"package": "@teelabs/tackle"
+							}
+						},
+						{
+							"id": 23,
+							"name": "subject",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 10,
+									"character": 38
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 8,
+								"name": "Subject",
+								"package": "@teelabs/tackle"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								24,
+								26,
+								25,
+								23
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 10,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 58,
+					"name": "DeniedDecision",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Structured fail-closed result."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 60,
+							"name": "action",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 50
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 59,
+							"name": "allowed",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 34
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": false
+							}
+						},
+						{
+							"id": 63,
+							"name": "matchedPermissions",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 114
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						},
+						{
+							"id": 62,
+							"name": "matchedRoles",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 90
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						},
+						{
+							"id": 64,
+							"name": "policyId",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 144
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 65,
+							"name": "policyVersion",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 162
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 61,
+							"name": "reason",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 25,
+									"character": 66
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 66,
+								"name": "DecisionReason",
+								"package": "@teelabs/tackle"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								60,
+								59,
+								63,
+								62,
+								64,
+								65,
+								61
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 25,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 31,
+					"name": "Permission",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An allow or deny rule consumed by a role."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 33,
+							"name": "action",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 14,
+									"character": 42
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 36,
+							"name": "condition",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 14,
+									"character": 107
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 27,
+								"name": "PolicyCondition",
+								"package": "@teelabs/tackle"
+							}
+						},
+						{
+							"id": 34,
+							"name": "effect",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 14,
+									"character": 58
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "allow"
+									},
+									{
+										"type": "literal",
+										"value": "deny"
+									}
+								]
+							}
+						},
+						{
+							"id": 32,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 14,
+									"character": 30
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 35,
+							"name": "resourceType",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 14,
+									"character": 84
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								33,
+								36,
+								34,
+								32,
+								35
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 14,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "PolicyDefinition",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Trusted policy input before it is compiled into an immutable snapshot."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 41,
+							"name": "policyId",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 18,
+									"character": 36
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 42,
+							"name": "policyVersion",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 18,
+									"character": 54
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 43,
+							"name": "roles",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 18,
+									"character": 77
+								}
+							],
+							"type": {
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "reference",
+										"target": 37,
+										"name": "RoleDefinition",
+										"package": "@teelabs/tackle"
+									}
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								41,
+								42,
+								43
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 18,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 44,
+					"name": "PolicySnapshot",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Validated policy metadata and role definitions used for one engine generation."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 45,
+							"name": "policyId",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 21,
+									"character": 43
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 46,
+							"name": "policyVersion",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 21,
+									"character": 70
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 47,
+							"name": "roles",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isReadonly": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 21,
+									"character": 102
+								}
+							],
+							"type": {
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 48,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 49,
+															"name": "name",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/index.ts",
+																	"line": 19,
+																	"character": 39
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														},
+														{
+															"id": 50,
+															"name": "permissions",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/index.ts",
+																	"line": 19,
+																	"character": 53
+																}
+															],
+															"type": {
+																"type": "typeOperator",
+																"operator": "readonly",
+																"target": {
+																	"type": "array",
+																	"elementType": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+																			"qualifiedName": "Readonly"
+																		},
+																		"typeArguments": [
+																			{
+																				"type": "reference",
+																				"target": 31,
+																				"name": "Permission",
+																				"package": "@teelabs/tackle"
+																			}
+																		],
+																		"name": "Readonly",
+																		"package": "typescript"
+																	}
+																}
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																49,
+																50
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/index.ts",
+															"line": 19,
+															"character": 37
+														}
+													]
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								45,
+								46,
+								47
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 21,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 16,
+					"name": "Resource",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The protected entity. Tackle never loads or infers a resource."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 19,
+							"name": "attributes",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 6,
+									"character": 55
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 18,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 6,
+									"character": 42
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 17,
+							"name": "type",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 6,
+									"character": 28
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								19,
+								18,
+								17
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 6,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 12,
+					"name": "RoleAssignment",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A role assignment resolved by the consumer. "
+							},
+							{
+								"kind": "code",
+								"text": "`policyVersion`"
+							},
+							{
+								"kind": "text",
+								"text": " can reject stale data."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 14,
+							"name": "active",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 4,
+									"character": 48
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 15,
+							"name": "policyVersion",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 4,
+									"character": 66
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 13,
+							"name": "role",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 4,
+									"character": 34
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								14,
+								15,
+								13
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 4,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 37,
+					"name": "RoleDefinition",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A consumer-defined bundle of permissions. Role names carry no implicit privilege."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 38,
+							"name": "name",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 16,
+									"character": 34
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 39,
+							"name": "permissions",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 16,
+									"character": 48
+								}
+							],
+							"type": {
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "reference",
+										"target": 31,
+										"name": "Permission",
+										"package": "@teelabs/tackle"
+									}
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								38,
+								39
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 16,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 8,
+					"name": "Subject",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A consumer-defined actor and its already-resolved role assignments."
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 10,
+							"name": "assignments",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 2,
+									"character": 39
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": 12,
+									"name": "RoleAssignment",
+									"package": "@teelabs/tackle"
+								}
+							}
+						},
+						{
+							"id": 11,
+							"name": "attributes",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 2,
+									"character": 70
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 9,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 2,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								10,
+								11,
+								9
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 2,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 67,
+					"name": "AuthorizationDecision",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The result returned by "
+							},
+							{
+								"kind": "code",
+								"text": "`can`"
+							},
+							{
+								"kind": "text",
+								"text": "."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 29,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": 51,
+								"name": "AllowedDecision",
+								"package": "@teelabs/tackle"
+							},
+							{
+								"type": "reference",
+								"target": 58,
+								"name": "DeniedDecision",
+								"package": "@teelabs/tackle"
+							}
+						]
+					}
+				},
+				{
+					"id": 66,
+					"name": "DecisionReason",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Reasons exposed for operational handling without exposing predicate internals."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 27,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": "missing-role"
+							},
+							{
+								"type": "literal",
+								"value": "missing-permission"
+							},
+							{
+								"type": "literal",
+								"value": "inactive-assignment"
+							},
+							{
+								"type": "literal",
+								"value": "condition-failed"
+							},
+							{
+								"type": "literal",
+								"value": "condition-error"
+							},
+							{
+								"type": "literal",
+								"value": "resource-mismatch"
+							},
+							{
+								"type": "literal",
+								"value": "context-mismatch"
+							},
+							{
+								"type": "literal",
+								"value": "stale-assignment"
+							}
+						]
+					}
+				},
+				{
+					"id": 27,
+					"name": "PolicyCondition",
+					"variant": "declaration",
+					"kind": 2097152,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A synchronous, deterministic, side-effect-free ABAC predicate."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 12,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 28,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 12,
+									"character": 30
+								}
+							],
+							"signatures": [
+								{
+									"id": 29,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"parameters": [
+										{
+											"id": 30,
+											"name": "input",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 22,
+												"name": "AuthorizationInput",
+												"package": "@teelabs/tackle"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 2,
+					"name": "buildPolicy",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 65,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "buildPolicy",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Validates trusted TypeScript policy code and returns an immutable snapshot.\nThrows "
+									},
+									{
+										"kind": "code",
+										"text": "`PolicyValidationError`"
+									},
+									{
+										"kind": "text",
+										"text": " before activation; it never executes conditions."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 65,
+									"character": 16
+								}
+							],
+							"parameters": [
+								{
+									"id": 4,
+									"name": "definition",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 40,
+										"name": "PolicyDefinition",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 44,
+								"name": "PolicySnapshot",
+								"package": "@teelabs/tackle"
+							}
+						}
+					]
+				},
+				{
+					"id": 5,
+					"name": "createAuthorizationEngine",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 78,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 6,
+							"name": "createAuthorizationEngine",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Creates a pure, I/O-free authorization engine. "
+									},
+									{
+										"kind": "code",
+										"text": "`replace`"
+									},
+									{
+										"kind": "text",
+										"text": " validates completely then swaps atomically.\nAssignments, authentication, persistence, sessions, and revocation remain consumer responsibilities."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 78,
+									"character": 16
+								}
+							],
+							"parameters": [
+								{
+									"id": 7,
+									"name": "initial",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 44,
+										"name": "PolicySnapshot",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 86,
+								"name": "AuthorizationEngine",
+								"package": "@teelabs/tackle"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						68
+					]
+				},
+				{
+					"title": "Interfaces",
+					"children": [
+						51,
+						20,
+						86,
+						22,
+						58,
+						31,
+						40,
+						44,
+						16,
+						12,
+						37,
+						8
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						67,
+						66,
+						27
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						2,
+						5
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 132,
+			"name": "react",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 133,
+					"name": "can",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/react.ts",
+							"line": 7,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 134,
+							"name": "can",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Performs a presentation-only authorization check.\nThe API remains the enforcement boundary and the helper performs no I/O."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/react.ts",
+									"line": 7,
+									"character": 16
+								}
+							],
+							"parameters": [
+								{
+									"id": 135,
+									"name": "engine",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 86,
+										"name": "AuthorizationEngine",
+										"package": "@teelabs/tackle"
+									}
+								},
+								{
+									"id": 136,
+									"name": "subject",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 8,
+										"name": "Subject",
+										"package": "@teelabs/tackle"
+									}
+								},
+								{
+									"id": 137,
+									"name": "action",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 138,
+									"name": "resource",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 16,
+										"name": "Resource",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 67,
+								"name": "AuthorizationDecision",
+								"package": "@teelabs/tackle"
+							}
+						}
+					]
+				},
+				{
+					"id": 139,
+					"name": "createCan",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/react.ts",
+							"line": 14,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 140,
+							"name": "createCan",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Binds a subject and engine for concise presentation checks such as "
+									},
+									{
+										"kind": "code",
+										"text": "`can(\"document.update\", resource)`"
+									},
+									{
+										"kind": "text",
+										"text": ".\nIt is not an enforcement boundary and performs no authentication or persistence."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/react.ts",
+									"line": 14,
+									"character": 16
+								}
+							],
+							"parameters": [
+								{
+									"id": 141,
+									"name": "engine",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 86,
+										"name": "AuthorizationEngine",
+										"package": "@teelabs/tackle"
+									}
+								},
+								{
+									"id": 142,
+									"name": "subject",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 8,
+										"name": "Subject",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 143,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/react.ts",
+											"line": 15,
+											"character": 9
+										}
+									],
+									"signatures": [
+										{
+											"id": 144,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/react.ts",
+													"line": 15,
+													"character": 9
+												}
+											],
+											"parameters": [
+												{
+													"id": 145,
+													"name": "action",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 146,
+													"name": "resource",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isOptional": true
+													},
+													"type": {
+														"type": "reference",
+														"target": 16,
+														"name": "Resource",
+														"package": "@teelabs/tackle"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": 67,
+												"name": "AuthorizationDecision",
+												"package": "@teelabs/tackle"
+											}
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 147,
+					"name": "useCan",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/react.ts",
+							"line": 21,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 148,
+							"name": "useCan",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Returns a presentation decision whenever subject or policy state changes.\nConsumers should call it from their framework hook or render lifecycle."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/react.ts",
+									"line": 21,
+									"character": 16
+								}
+							],
+							"parameters": [
+								{
+									"id": 149,
+									"name": "engine",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 86,
+										"name": "AuthorizationEngine",
+										"package": "@teelabs/tackle"
+									}
+								},
+								{
+									"id": 150,
+									"name": "subject",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 8,
+										"name": "Subject",
+										"package": "@teelabs/tackle"
+									}
+								},
+								{
+									"id": 151,
+									"name": "action",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 152,
+									"name": "resource",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"target": 16,
+										"name": "Resource",
+										"package": "@teelabs/tackle"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 67,
+								"name": "AuthorizationDecision",
+								"package": "@teelabs/tackle"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						133,
+						139,
+						147
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/react.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [
+				153,
+				95,
+				1,
+				132
+			]
+		}
+	],
+	"packageName": "@teelabs/tackle",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# Tackle\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "`@teelabs/tackle`"
+		},
+		{
+			"kind": "text",
+			"text": " is an experimental, framework-agnostic TypeScript authorization engine for RBAC and ABAC. Its primary operation is "
+		},
+		{
+			"kind": "code",
+			"text": "`can`"
+		},
+		{
+			"kind": "text",
+			"text": ": it evaluates trusted subject, action, resource, and context input against an immutable policy snapshot.\n\nTackle is not an authentication system, identity provider, session store, database layer, tenant model, policy DSL, remote PDP, HTTP server, or UI security boundary. The consumer resolves trusted input, owns assignment persistence and revocation, and performs authoritative API checks.\n\n## Five-minute quickstart\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\nnpm install @teelabs/tackle\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nimport { buildPolicy, createAuthorizationEngine } from \"@teelabs/tackle\";\n\nconst engine = createAuthorizationEngine(buildPolicy({\n  policyId: \"application-access\",\n  policyVersion: \"2026.01\",\n  roles: [{ name: \"editor\", permissions: [{ id: \"document-update\", action: \"document.update\", effect: \"allow\" }] }],\n}));\n\nconst decision = engine.can({\n  subject: { id: \"subject-1\", assignments: [{ role: \"editor\" }] },\n  action: \"document.update\",\n  resource: { type: \"document\", id: \"document-1\" },\n});\nconsole.log(decision.allowed); // true\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nRole names have no implicit privilege. Explicit deny rules override allows:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\n{ name: \"restricted\", permissions: [\n  { id: \"allow-edit\", action: \"document.update\", effect: \"allow\" },\n  { id: \"deny-edit\", action: \"document.update\", effect: \"deny\" },\n] }\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nABAC conditions are trusted synchronous TypeScript predicates. Exceptions become "
+		},
+		{
+			"kind": "code",
+			"text": "`condition-error`"
+		},
+		{
+			"kind": "text",
+			"text": " denial. Conditions must be bounded and side-effect-free.\n\n## Policy replacement\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nengine.replace(buildPolicy({ policyId: \"application-access\", policyVersion: \"2026.02\", roles }));\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nThe complete replacement validates before an atomic swap; invalid replacement leaves the last-known-good snapshot active. Policy polling and assignment/session changes belong to the consumer.\n\n## Integrations\n\n- [Express middleware]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/express.md",
+			"target": 5
+		},
+		{
+			"kind": "text",
+			"text": ") maps missing subjects to 401 and denials to 403.\n- [React presentation checks]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/react.md",
+			"target": 6
+		},
+		{
+			"kind": "text",
+			"text": ") hide UI only; the API remains authoritative.\n- [Drizzle callbacks]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/drizzle.md",
+			"target": 7
+		},
+		{
+			"kind": "text",
+			"text": ") translate consumer-owned query results without assuming a schema.\n\nSee [concepts]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/concepts.md",
+			"target": 8
+		},
+		{
+			"kind": "text",
+			"text": "), [core API]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/core-api.md",
+			"target": 9
+		},
+		{
+			"kind": "text",
+			"text": "), [policy authoring]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/policy-authoring.md",
+			"target": 10
+		},
+		{
+			"kind": "text",
+			"text": "), [security model]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/security-model.md",
+			"target": 11
+		},
+		{
+			"kind": "text",
+			"text": "), and [integration boundaries]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "docs/integration-boundaries.md",
+			"target": 12
+		},
+		{
+			"kind": "text",
+			"text": "). Run the examples with "
+		},
+		{
+			"kind": "code",
+			"text": "`npx tsx examples/minimal-rbac.ts`"
+		},
+		{
+			"kind": "text",
+			"text": "."
+		}
+	],
+	"symbolIdMap": {
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "buildPolicy"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "buildPolicy"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "definition"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "createAuthorizationEngine"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "createAuthorizationEngine"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "initial"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Subject"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Subject.id"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Subject.assignments"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Subject.attributes"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleAssignment"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleAssignment.role"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleAssignment.active"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleAssignment.policyVersion"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Resource"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Resource.type"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Resource.id"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Resource.attributes"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationContext"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationContext.attributes"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationInput"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationInput.subject"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationInput.action"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationInput.resource"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationInput.context"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyCondition"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "input"
+		},
+		"31": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Permission"
+		},
+		"32": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Permission.id"
+		},
+		"33": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Permission.action"
+		},
+		"34": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Permission.effect"
+		},
+		"35": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Permission.resourceType"
+		},
+		"36": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Permission.condition"
+		},
+		"37": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleDefinition"
+		},
+		"38": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleDefinition.name"
+		},
+		"39": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RoleDefinition.permissions"
+		},
+		"40": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyDefinition"
+		},
+		"41": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyDefinition.policyId"
+		},
+		"42": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyDefinition.policyVersion"
+		},
+		"43": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyDefinition.roles"
+		},
+		"44": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicySnapshot"
+		},
+		"45": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicySnapshot.policyId"
+		},
+		"46": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicySnapshot.policyVersion"
+		},
+		"47": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicySnapshot.roles"
+		},
+		"48": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"49": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.name"
+		},
+		"50": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.permissions"
+		},
+		"51": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision"
+		},
+		"52": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision.allowed"
+		},
+		"53": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision.action"
+		},
+		"54": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision.matchedRoles"
+		},
+		"55": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision.matchedPermissions"
+		},
+		"56": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision.policyId"
+		},
+		"57": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AllowedDecision.policyVersion"
+		},
+		"58": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision"
+		},
+		"59": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.allowed"
+		},
+		"60": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.action"
+		},
+		"61": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.reason"
+		},
+		"62": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.matchedRoles"
+		},
+		"63": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.matchedPermissions"
+		},
+		"64": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.policyId"
+		},
+		"65": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DeniedDecision.policyVersion"
+		},
+		"66": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DecisionReason"
+		},
+		"67": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationDecision"
+		},
+		"68": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyValidationError"
+		},
+		"69": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "ErrorConstructor.captureStackTrace"
+		},
+		"70": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "ErrorConstructor.captureStackTrace"
+		},
+		"71": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "targetObject"
+		},
+		"72": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "constructorOpt"
+		},
+		"73": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "ErrorConstructor.prepareStackTrace"
+		},
+		"74": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "ErrorConstructor.prepareStackTrace"
+		},
+		"75": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "err"
+		},
+		"76": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "stackTraces"
+		},
+		"77": {
+			"sourceFileName": "node_modules/@types/node/globals.d.ts",
+			"qualifiedName": "ErrorConstructor.stackTraceLimit"
+		},
+		"78": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyValidationError.__constructor"
+		},
+		"79": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyValidationError"
+		},
+		"80": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "issues"
+		},
+		"81": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "PolicyValidationError.issues"
+		},
+		"82": {
+			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+			"qualifiedName": "Error.name"
+		},
+		"83": {
+			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+			"qualifiedName": "Error.message"
+		},
+		"84": {
+			"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+			"qualifiedName": "Error.stack"
+		},
+		"85": {
+			"sourceFileName": "node_modules/typescript/lib/lib.es2022.error.d.ts",
+			"qualifiedName": "Error.cause"
+		},
+		"86": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine"
+		},
+		"87": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine.can"
+		},
+		"88": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine.can"
+		},
+		"89": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "input"
+		},
+		"90": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine.replace"
+		},
+		"91": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine.replace"
+		},
+		"92": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "definition"
+		},
+		"93": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine.getSnapshot"
+		},
+		"94": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AuthorizationEngine.getSnapshot"
+		},
+		"95": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": ""
+		},
+		"96": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "can"
+		},
+		"97": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "can"
+		},
+		"98": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "action"
+		},
+		"99": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "options"
+		},
+		"100": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__function"
+		},
+		"101": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__function"
+		},
+		"102": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "request"
+		},
+		"103": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "response"
+		},
+		"104": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "next"
+		},
+		"105": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeRequest"
+		},
+		"106": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeRequest.subject"
+		},
+		"107": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeRequest.params"
+		},
+		"108": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeRequest.tackle"
+		},
+		"109": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"110": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type.decision"
+		},
+		"111": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeResponse"
+		},
+		"112": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeResponse.status"
+		},
+		"113": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeResponse.status"
+		},
+		"114": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "code"
+		},
+		"115": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeResponse.json"
+		},
+		"116": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressLikeResponse.json"
+		},
+		"117": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "body"
+		},
+		"118": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressNext"
+		},
+		"119": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"120": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"121": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "error"
+		},
+		"122": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressCanOptions"
+		},
+		"123": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressCanOptions.engine"
+		},
+		"124": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressCanOptions.resolveResource"
+		},
+		"125": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"126": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"127": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "request"
+		},
+		"128": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "ExpressCanOptions.resolveContext"
+		},
+		"129": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"130": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "__type"
+		},
+		"131": {
+			"sourceFileName": "src/express.ts",
+			"qualifiedName": "request"
+		},
+		"132": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": ""
+		},
+		"133": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "can"
+		},
+		"134": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "can"
+		},
+		"135": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "engine"
+		},
+		"136": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "subject"
+		},
+		"137": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "action"
+		},
+		"138": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "resource"
+		},
+		"139": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "createCan"
+		},
+		"140": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "createCan"
+		},
+		"141": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "engine"
+		},
+		"142": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "subject"
+		},
+		"143": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "__function"
+		},
+		"144": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "__function"
+		},
+		"145": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "action"
+		},
+		"146": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "resource"
+		},
+		"147": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "useCan"
+		},
+		"148": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "useCan"
+		},
+		"149": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "engine"
+		},
+		"150": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "subject"
+		},
+		"151": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "action"
+		},
+		"152": {
+			"sourceFileName": "src/react.ts",
+			"qualifiedName": "resource"
+		},
+		"153": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": ""
+		},
+		"154": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "createDrizzleAssignmentResolver"
+		},
+		"155": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "createDrizzleAssignmentResolver"
+		},
+		"156": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "DB"
+		},
+		"157": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "options"
+		},
+		"158": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "__object"
+		},
+		"159": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "__object.load"
+		},
+		"160": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "__object.load"
+		},
+		"161": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "subjectId"
+		},
+		"162": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "context"
+		},
+		"163": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions"
+		},
+		"164": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions.db"
+		},
+		"165": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions.loadAssignments"
+		},
+		"166": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "__type"
+		},
+		"167": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "__type"
+		},
+		"168": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "db"
+		},
+		"169": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "subjectId"
+		},
+		"170": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "context"
+		},
+		"171": {
+			"sourceFileName": "src/drizzle.ts",
+			"qualifiedName": "DrizzleAssignmentResolverOptions.DB"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/express.ts",
+			"3": "src/react.ts",
+			"4": "src/drizzle.ts",
+			"5": "docs/express.md",
+			"6": "docs/react.md",
+			"7": "docs/drizzle.md",
+			"8": "docs/concepts.md",
+			"9": "docs/core-api.md",
+			"10": "docs/policy-authoring.md",
+			"11": "docs/security-model.md",
+			"12": "docs/integration-boundaries.md"
+		},
+		"reflections": {
+			"1": 1,
+			"2": 95,
+			"3": 132,
+			"4": 153
+		}
+	}
+}
