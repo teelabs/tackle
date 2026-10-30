@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-10-30
+
+### Fixed
+
+- Build and verify `dist/` in the npm publishing job so the published package contains its exported runtime and declaration files.
+
 ## [0.1.1] - 2026-10-29
 
 ### Security
