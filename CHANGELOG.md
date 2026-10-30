@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Added an OIDC-based npm publishing workflow with tag/version validation and provenance support.
 - Updated Vitest to 4.1.12 to address the file-read and code-injection advisories affecting older Vitest releases.
 - Modernized development and release tooling around pnpm, tsdown, Node.js 24/26 CI coverage, and meaningful TypeScript ESLint rules.
 
