@@ -108,6 +108,16 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Build package for publishing
+        run: pnpm run build
+      - name: Verify publish artifacts
+        run: |
+          test -f dist/index.js
+          test -f dist/index.cjs
+          test -f dist/index.d.ts
+          test -f dist/express.js
+          test -f dist/react.js
+          test -f dist/drizzle.js
       - name: Check npm version availability
         id: npm-version
         run: |
