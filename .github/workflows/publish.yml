@@ -108,5 +108,17 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Check npm version availability
+        id: npm-version
+        run: |
+          package_name="$(node -p "JSON.parse(require('node:fs').readFileSync('package.json', 'utf8')).name")"
+          package_version="$(node -p "JSON.parse(require('node:fs').readFileSync('package.json', 'utf8')).version")"
+          if npm view "$package_name@$package_version" version >/dev/null 2>&1; then
+            echo "already_published=true" >> "$GITHUB_OUTPUT"
+            echo "$package_name@$package_version is already published; skipping duplicate publication."
+          else
+            echo "already_published=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Publish with npm trusted publishing and provenance
+        if: steps.npm-version.outputs.already_published != 'true'
         run: npm publish --provenance --access public
