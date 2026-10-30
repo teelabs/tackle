@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 
-- Made the npm Release workflow idempotent for the one-time manually bootstrapped `0.1.0` package.
+## [0.1.1] - 2026-10-29
+
+### Security
+
+- Keep denied Express responses generic so authorization provenance is not exposed to clients.
+
+### Changed
+
+- Document the server-side audit decision boundary and add agent guidance for preserving it.
+- Make the npm release workflow idempotent for the one-time manually bootstrapped `0.1.0` package.
 
 ## [0.1.0] - 2026-10-30
 
