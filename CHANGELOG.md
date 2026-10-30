@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Made the npm Release workflow idempotent for the one-time manually bootstrapped `0.1.0` package.
+
 ## [0.1.0] - 2026-10-30
 
 ### Added

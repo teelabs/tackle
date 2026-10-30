@@ -17,3 +17,5 @@ Prerequisites:
 - the repository's release rules permit the tag and the required checks are green.
 
 To publish, update `package.json` and `CHANGELOG.md`, run the documented verification commands, merge the change to `main`, and create a GitHub Release for an annotated tag whose version exactly matches `package.json`, for example `v0.1.0`. The workflow runs only for the GitHub Release `published` event, rejects mismatched tags, and does not use an `NPM_TOKEN` secret. npm generates provenance automatically for trusted publishing from this public GitHub repository.
+
+The initial `0.1.0` package may be bootstrapped manually because npm requires a package to exist before its first trusted-publisher configuration. The workflow checks the exact package version and skips a duplicate publication for that bootstrap release; subsequent versions are published through OIDC.
