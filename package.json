@@ -2,6 +2,13 @@
   "name": "@teelabs/tackle",
   "version": "0.1.0",
   "description": "A framework-agnostic RBAC and ABAC authorization engine.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teelabs/tackle.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "packageManager": "pnpm@12.15.0",
   "main": "./dist/index.js",
