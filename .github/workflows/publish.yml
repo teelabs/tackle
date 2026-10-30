@@ -1,15 +1,8 @@
 name: Publish package
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: Existing version tag to publish, such as v0.1.0
-        required: true
-        type: string
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -26,7 +19,7 @@ jobs:
       - name: Check out release source
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref }}
+          ref: ${{ github.event.release.tag_name }}
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -40,7 +33,7 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Validate release tag
         env:
-          RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
         run: |
           case "$RELEASE_TAG" in
             v[0-9]*.[0-9]*.[0-9]*) ;;
@@ -73,7 +66,7 @@ jobs:
       - name: Check out release source
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref }}
+          ref: ${{ github.event.release.tag_name }}
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -102,7 +95,7 @@ jobs:
       - name: Check out release source
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref }}
+          ref: ${{ github.event.release.tag_name }}
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:

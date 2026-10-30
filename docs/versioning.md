@@ -16,6 +16,4 @@ Prerequisites:
 - the npm trusted publisher allows direct `npm publish` for this workflow;
 - the repository's release rules permit the tag and the required checks are green.
 
-To publish, update `package.json` and `CHANGELOG.md`, run the documented verification commands, merge the change to `main`, and create an annotated tag whose version exactly matches `package.json`, for example `v0.1.0`. The workflow rejects mismatched tags and does not use an `NPM_TOKEN` secret. npm generates provenance automatically for trusted publishing from this public GitHub repository.
-
-The workflow also supports manual dispatch when given an existing version tag. Manual dispatch does not create a version or tag; it only republishes the selected tag and is subject to npm's duplicate-version rejection.
+To publish, update `package.json` and `CHANGELOG.md`, run the documented verification commands, merge the change to `main`, and create a GitHub Release for an annotated tag whose version exactly matches `package.json`, for example `v0.1.0`. The workflow runs only for the GitHub Release `published` event, rejects mismatched tags, and does not use an `NPM_TOKEN` secret. npm generates provenance automatically for trusted publishing from this public GitHub repository.
